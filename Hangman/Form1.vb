@@ -19,6 +19,7 @@
         totalAmountOfWords = 0
         wordhidden = ""
         stage = 0
+        Me.Invalidate()
         triesLeft.Text = "You have " & 10 - stage & " attempts left"
         trys.Text = "You have no tries"
         attempts.Clear()
@@ -200,8 +201,7 @@
     End Sub
 
     Private Sub NewWordsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NewWordsToolStripMenuItem.Click
-        Startt.Show()
-        Me.Close()
+        Application.Restart()
     End Sub
 
     Private Sub SameWordsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SameWordsToolStripMenuItem.Click
