@@ -68,7 +68,7 @@
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>false</SignManifests>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>0F3A226AC1E7B2BF35FB3FF46C3DD424E908B7C3</ManifestCertificateThumbprint>
@@ -80,7 +80,8 @@
     <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>SuperNinja_4965 Signature key.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <TargetZone>LocalIntranet</TargetZone>
@@ -121,12 +122,6 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="lose.Designer.vb">
-      <DependentUpon>lose.vb</DependentUpon>
-    </Compile>
-    <Compile Include="lose.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -148,19 +143,10 @@
     <Compile Include="Startt.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Win.Designer.vb">
-      <DependentUpon>Win.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Win.vb">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="lose.resx">
-      <DependentUpon>lose.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -170,9 +156,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Startt.resx">
       <DependentUpon>Startt.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Win.resx">
-      <DependentUpon>Win.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -189,7 +172,6 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
-    <None Include="SuperNinja_4965 Signature key.pfx" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">

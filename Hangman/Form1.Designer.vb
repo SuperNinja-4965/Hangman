@@ -39,6 +39,7 @@ Partial Class Form1
         Me.Message = New System.Windows.Forms.ToolStripMenuItem()
         Me.Options = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.About = New System.Windows.Forms.ToolStripMenuItem()
+        Me.WinLose = New System.Windows.Forms.Label()
         Me.GroupBox3.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.Options.SuspendLayout()
@@ -166,12 +167,24 @@ Partial Class Form1
         Me.About.Size = New System.Drawing.Size(107, 22)
         Me.About.Text = "About"
         '
+        'WinLose
+        '
+        Me.WinLose.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.WinLose.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.WinLose.Location = New System.Drawing.Point(0, 24)
+        Me.WinLose.Name = "WinLose"
+        Me.WinLose.Size = New System.Drawing.Size(287, 203)
+        Me.WinLose.TabIndex = 5
+        Me.WinLose.Text = "You Lose. ;("
+        Me.WinLose.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(287, 347)
         Me.ContextMenuStrip = Me.Options
+        Me.Controls.Add(Me.WinLose)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.GroupBox3)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -205,4 +218,5 @@ Partial Class Form1
     Friend WithEvents About As ToolStripMenuItem
     Friend WithEvents SameWordsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents NewWordsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents WinLose As Label
 End Class

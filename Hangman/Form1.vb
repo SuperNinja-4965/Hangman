@@ -13,6 +13,7 @@
     End Sub
 
     Sub load_game()
+        WinLose.Hide()
         GroupBox3.Enabled = True
         dewords.Clear()
         totalAmountOfWords = 0
@@ -122,6 +123,8 @@
                     'Win.Show()
                     'Me.Hide()
                     Message.Text = "You got the word correct it was: " & dewords(word)
+                    WinLose.Show()
+                    WinLose.Text = "You Win. :) " & Environment.NewLine & "The word was: " & Environment.NewLine & dewords(word)
                     GroupBox3.Enabled = False
                 End If
             Else
@@ -166,6 +169,8 @@
         If stage >= 10 Then
             e.Graphics.DrawLine(New Pen(Color.Black, 2), 198, 130, 213, 170)
             Message.Text = "You lose. The word was: " & dewords(word)
+            WinLose.Show()
+            WinLose.Text = "You Lose. ;( " & Environment.NewLine & "The word was: " & Environment.NewLine & dewords(word)
             'lose.Show()
             'Me.Hide()
             GroupBox3.Enabled = False
