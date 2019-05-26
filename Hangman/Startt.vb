@@ -7,7 +7,8 @@ Public Class Startt
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        MsgBox("Welcome Beta tester! This program is in beta. This program was made by Joshua Glass (aka SuperNinja_4965). Thank you for playing")
+        'MsgBox("Welcome Beta tester! This program is in beta. This program was made by Joshua Glass (aka SuperNinja_4965). Thank you for playing")
+        MsgBox("Welcome to Hangman! This program was made by Joshua Glass (aka SuperNinja_4965). Thank you for playing")
         TextBox1.Text = Replace$(TextBox1.Text, vbCrLf & vbCrLf, vbCrLf)
         TextBox1.Text = Replace$(TextBox1.Text, vbCrLf & vbCrLf, vbCrLf)
         TextBox1.Text = TextBox1.Text.ToLower
